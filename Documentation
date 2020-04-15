@@ -1,0 +1,93 @@
+Tell’all Requirements Specification
+Version 1.0
+March 19, 2019
+
+
+Use this Requirements Specification template to document the requirements for your product or service, including priority and approval.  Tailor the specification to suit your project, organizing the applicable sections in a way that works best, and use the checklist to record the decisions about what is applicable and what isn't. 
+The format of the requirements depends on what works best for your project.
+This document contains instructions and examples which are for the benefit of the person writing the document and should be removed before the document is finalized. 
+To regenerate the TOC, select all (CTL-A) and press F9. 
+ 
+Table of Contents
+1.	EXECUTIVE SUMMARY	3
+1.1	PROJECT OVERVIEW	3
+1.2	PURPOSE AND SCOPE OF THIS SPECIFICATION	3
+2.	PRODUCT/SERVICE DESCRIPTION	3
+2.1	PRODUCT CONTEXT	3
+2.2	USER CHARACTERISTICS	3
+2.3	ASSUMPTIONS	3
+2.4	CONSTRAINTS	3
+2.5	DEPENDENCIES	4
+3.	REQUIREMENTS	4
+3.1	FUNCTIONAL REQUIREMENTS	5
+3.2	NON-FUNCTIONAL REQUIREMENTS	5
+3.2.1	User Interface Requirements	5
+3.2.2	Usability	5
+3.2.3	Performance	6
+3.2.4	Manageability/Maintainability	6
+3.2.5	System Interface/Integration	7
+3.2.6	Security	8
+3.2.7	Data Management	8
+3.2.8	Standards Compliance	8
+3.2.9	Portability	8
+3.2.10	Other Non-Functional Requirements	9
+3.3	DOMAIN REQUIREMENTS	9
+4.	USER SCENARIOS/USE CASES	9
+APPENDIX	10
+APPENDIX A.	DEFINITIONS, ACRONYMS, AND ABBREVIATIONS	10
+APPENDIX B.	REFERENCES	10
+APPENDIX C.	REQUIREMENTS TRACEABILITY MATRIX	10
+APPENDIX D.	ORGANIZING THE REQUIREMENTS	12
+
+ 
+1.	Executive Summary
+
+1.1	Project Overview
+
+
+Nowdays, with all the technology we have, is important to spread the information and automatization in order to help everyone in daily life. Our country faces many problems in businesses, education system, transportation and employement, but what caught our eye is that public transportation is very informal and people that travel everyday from one city to another find it very stressful.
+
+So, our idea is to build up a system that helps Municipality of Tirana and other cities, drivers, administrators and most importantly everyone who need transportation. The national transportation with buses in our country is in a bit of a chaos. There is very little automation which creates difficulties in organizing the system. This is the reason we found it logical to create a software that addresses that.
+
+The information people have about buses that travel from city to city is limited and comes from word-of-mouth. That is what our project aims to resolve. We want to create a software where municipality manages employees, drivers and help people to get information about timetables, destinations, buses used, travel agencies and everything else. Besides information, the most important element is ticket reservation. Travelers can enter our software to buy tickets, know their reserved seat and choose their leaving and returning time. Each economic transaction goes directly to the economist account.
+
+
+
+1.2	Purpose and Scope of this Specification
+
+The purpose of this specification is to currently define the state of the application design and documentation of the processes.
+In this scope:
+●     Documentation of the features 
+●     Technical overview of application processes (discussed in Part 2.1)
+●     Components & Functional/non-functional requirements (discussed in Part 3)
+●     Use cases/scenarios (discussed in Part 4)
+●      Constraints (discussed in Part 2.4/5) of the Document
+●     Legislative requirements for the product
+
+2.	Product/Service Description
+2.1	Product Context
+Tell-All is a software that helps Municipality of Tirana and other cities, drivers, administrators and most importantly everyone who need transportation. The information people in Albania have about buses that travel from city to city is limited and comes from word-of-mouth. That’s why we will create a software where municipality manages employees, drivers and help people to get information about timetables, destinations, buses used, travel agencies and everything else. Every citizen as well, will have the opportunity to find the schedules in a short time and reserve their ticket. Travelers can enter our software to buy tickets, know their reserved seat and choose their leaving and returning time. Each economic transaction goes directly to the economist account.
+2.2	User Characteristics
+
+1.	Manager, which represents Municipality, or the person who is responsible for Public Transportation. This user will have access to the whole system and to all other users, can check them and their work, will also be responsible to make transparent everything that is going on with the system. Manager will specifically assign the administrators and can also edit other accounts in the system.
+
+2.	Administrator, actually there will more than one. Since Albania is divided in 12 counties, we thought that would the best choice to have 12 administrators who will monitor all the lines in their municipalities (61), if there will be a need, we are going to give each administrator the credit to have a subadmin. The administrator is responsible to register/add/delete/edit other employees and monitor their work and the system as well.
+
+3.	Economist, which is register by the manager. The economist will be send the same reports to administrators and manager. He will be responsible for any kind of transaction, also will be the one than monitor and take care of online payments. 
+
+4.	Employee, is going to be the user which include drivers, each of them should check in as soon as they left a station and check out when they arrive. This user can also be used for other employees that we have think about, they might be receptionist or other workers in the big stations like Tirana Terminal.
+
+5.	Guest will be each traveler that wants to travel and except they want to get information in the system, they want to reserve a place or/and pay online for the ticket. 
+
+2.3	Assumptions 
+We assume that the client is verified when entering our app through their ID number in order to be eligible as a client. Our software has the main function of seat reservation for national traveling, among other functions. It is assumed that the business workers update the system with timetables, destinations, prices and seats. It is assumed the economist manages payments and economic reports. It is assumed the mayor’s office oversees the whole process and makes sure it works according to regulations. It is assumed the app is not only useable, but efficient and effective as well.
+2.4	Constraints
+•	The only possible constraint for our Web Application is the necessity of an electronic device connected to the web that will be needed to access our application and an account that needs to be created by every user in order to make a reservation. With 1.8 million active internet users in Albania as of 2016, we believe that accessing our web application will not be a struggle for our users.
+•	Creating a user friendly interface will play a very important role knowing who our potential users will be.
+2.5	Dependencies
+
+•	As a Web-based Application, Internet access will be essential for our software to run. It should be constant and the Internet provider would be a good one with high speed. 
+•	All the users and employees must have a smart device, which usually is a smartphone or other devices that have an internet connection.
+•	All administrator accounts will be created only by Manager (Direct Representative of Municipality).
+•	Other users will be monitored by administrators, especially drivers. 
+•	System will be responsibility of Municipality and will be adapted though time, if the board of Municipality decide new adjustments.
